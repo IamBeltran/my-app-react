@@ -2,7 +2,7 @@
 //	│	IMPORT REACT MODULE DEPENDENCIES.												│
 //	└───────────────────────────────────────────────────────────────────────────────────┘
     import React, { Component } from 'react';
-//  import PropTypes from 'prop-types';
+	import PropTypes from 'prop-types';
 
 //	┌───────────────────────────────────────────────────────────────────────────────────┐
 //	│	IMPORT REACT COMPONENT.															│
@@ -11,10 +11,14 @@
     
 //	──[	COMPONENT Footer ]───────────────────────────────────────────────────────────────
 	class Footer extends Component {
+		static  propTypes = {
+			copyright: PropTypes.string
+		};
 		render() {
+			const { copyright = '© React 2017' } = this.props;
 			return (
 				<div className="Footer">
-					<p>Welcome World REACT</p>
+					<p>{ copyright }</p>
 				</div>
 			);
 		}

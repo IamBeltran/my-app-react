@@ -22,7 +22,7 @@
 				<div className="App">
 				<Header title="Codejobs" items={items} />
 				<Content/>
-				<Footer/>
+				<Footer copyright="&copy; Codejobs 2017" />
 				</div>
 			);
 		}
