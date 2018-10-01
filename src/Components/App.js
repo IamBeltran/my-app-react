@@ -1,22 +1,32 @@
-import React, { Component } from 'react';
+//	┌───────────────────────────────────────────────────────────────────────────────────┐
+//	│	IMPORT REACT MODULE DEPENDENCIES.												│
+//	└───────────────────────────────────────────────────────────────────────────────────┘
+	import React, { Component } from 'react';
+//	import PropTypes from 'prop-types';
 
-//import './Global/css/App.css';
+//	┌───────────────────────────────────────────────────────────────────────────────────┐
+//	│	IMPORT REACT COMPONENT.															│
+//	└───────────────────────────────────────────────────────────────────────────────────┘
+	import Header	from './Global/Header';
+	import Content	from './Global/Content';
+	import Footer	from './Global/Footer';
+//	import './Global/css/App.css';
 
-//Components
-import Header   from './Global/Header';
-import Content from './Global/Content';
-import Footer   from './Global/Footer';
+//	──[	DATA ]───────────────────────────────────────────────────────────────────────────
+	import items from '../data/menu';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Header/>
-        <Content/>
-        <Footer/>
-      </div>
-    );
-  }
-}
+//	──[	COMPONENT Footer ]───────────────────────────────────────────────────────────────
+	class App extends Component {
+		render() {
+			return (
+				<div className="App">
+				<Header title="Codejobs" items={items} />
+				<Content/>
+				<Footer/>
+				</div>
+			);
+		}
+	};
 
-export default App;
+//	──[	EXPORT Footer ]──────────────────────────────────────────────────────────────────
+	export default App;

@@ -1,14 +1,24 @@
-import React, { Component } from 'react';
-import './css/Footer.css';
+//	┌───────────────────────────────────────────────────────────────────────────────────┐
+//	│	IMPORT REACT MODULE DEPENDENCIES.												│
+//	└───────────────────────────────────────────────────────────────────────────────────┘
+    import React, { Component } from 'react';
+//  import PropTypes from 'prop-types';
 
-class Footer extends Component {
-  render() {
-    return (
-      <div className="Footer">
-          <p>Welcome World REACT</p>
-      </div>
-    );
-  }
-}
-
-export default Footer;
+//	┌───────────────────────────────────────────────────────────────────────────────────┐
+//	│	IMPORT REACT COMPONENT.															│
+//	└───────────────────────────────────────────────────────────────────────────────────┘
+    import './css/Footer.css';
+    
+//	──[	COMPONENT Footer ]───────────────────────────────────────────────────────────────
+	class Footer extends Component {
+		render() {
+			return (
+				<div className="Footer">
+					<p>Welcome World REACT</p>
+				</div>
+			);
+		}
+	}
+	
+//	──[	EXPORT Footer ]──────────────────────────────────────────────────────────────────
+	export default Footer;

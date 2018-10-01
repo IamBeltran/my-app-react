@@ -1,12 +1,22 @@
-import React from 'react';
-import { render } from 'react-dom';
-import './index.css';
-import App from './Components/App';
-import registerServiceWorker from './registerServiceWorker';
+//	┌───────────────────────────────────────────────────────────────────────────────────┐
+//	│	IMPORT REACT MODULE DEPENDENCIES.												│
+//	└───────────────────────────────────────────────────────────────────────────────────┘
+	import React from 'react';
+	import { render } from 'react-dom';
+//	import PropTypes from 'prop-types';
 
-render(
-    <App />, 
-    document.getElementById('root')
-);
+//	┌───────────────────────────────────────────────────────────────────────────────────┐
+//	│	IMPORT REACT COMPONENT.															│
+//	└───────────────────────────────────────────────────────────────────────────────────┘
+	import './index.css';
+	import App from './components/App';
+	import registerServiceWorker from './registerServiceWorker';
 
-registerServiceWorker();
+//	──[ RENDER App ]─────────────────────────────────────────────────────────────────────
+	render(
+		<App />, 
+		document.getElementById('root')
+	);
+
+//	──[	REGISTER SERVICE WORKER ]────────────────────────────────────────────────────────
+	registerServiceWorker();
