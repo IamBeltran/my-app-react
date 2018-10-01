@@ -1,0 +1,12 @@
+.Content {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.Content h1{
+    text-align: center;
+}
+.Content p{
+    text-align: justify;
+
+}
