@@ -21,7 +21,6 @@
 			children: PropTypes.object.isRequired,
 		};
 		render() {
-			console.log(this.props)
 			const { children }  = this.props;
 			return (
 				<div className="App">
