@@ -3,6 +3,7 @@
 //	└───────────────────────────────────────────────────────────────────────────────────┘
 	import React, { Component } from 'react';
 	import PropTypes from 'prop-types';
+	import { Link } from 'react-router-dom';
 
 //	┌───────────────────────────────────────────────────────────────────────────────────┐
 //	│	IMPORT REACT COMPONENT.															│
@@ -28,7 +29,7 @@
 						<ul className="Menu">
 							{
 								items && items.map((item, key) =>
-									<li key={key}>{item.title}</li>
+									<li key={key}><Link to={item.url}>{item.title}</Link></li>
 								)
 							}
 						</ul>

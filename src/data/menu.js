@@ -14,5 +14,9 @@ export default [
   {
     title: 'Library',
     url: '/library'
+  },
+  {
+    title: 'Page404',
+    url: '/Page404'
   }
 ];

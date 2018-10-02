@@ -2,7 +2,7 @@
 //	│	IMPORT REACT MODULE DEPENDENCIES.												│
 //	└───────────────────────────────────────────────────────────────────────────────────┘
 	import React, { Component } from 'react';
-//	import PropTypes from 'prop-types';
+	import PropTypes from 'prop-types';
 
 //	┌───────────────────────────────────────────────────────────────────────────────────┐
 //	│	IMPORT REACT COMPONENT.															│
@@ -17,11 +17,16 @@
 
 //	──[	COMPONENT Footer ]───────────────────────────────────────────────────────────────
 	class App extends Component {
+		static  propTypes = {
+			children: PropTypes.object.isRequired,
+		};
 		render() {
+			console.log(this.props)
+			const { children }  = this.props;
 			return (
 				<div className="App">
 				<Header title="Codejobs" items={items} />
-				<Content/>
+				<Content body={children}/>
 				<Footer copyright="&copy; Codejobs 2017" />
 				</div>
 			);
